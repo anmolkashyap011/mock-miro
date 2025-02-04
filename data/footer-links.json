@@ -1,0 +1,69 @@
+[
+    {
+      "section": "Product",
+      "links": [
+        { "body": "Online whiteboard", "href": "#", "special": false },
+        { "body": "Apps & Integrations", "href": "#", "special": false },
+        { "body": "Templates", "href": "#", "special": false },
+        { "body": "Miroverse", "href": "#", "special": false },
+        { "body": "Miro Developer Platform", "href": "#", "special": false },
+        { "body": "Miro for Devices", "href": "#", "special": false },
+        { "body": "Security & Compliance", "href": "#", "special": false },
+        { "body": "Accessibility", "href": "#", "special": false },
+        { "body": "Changelog", "href": "#", "special": false },
+        { "body": "View demo", "href": "#", "special": true }
+      ]
+    },
+    {
+      "section": "Solutions",
+      "links": [
+        { "body": "Meetings and Workshops", "href": "#", "special": false },
+        { "body": "Brainstorming & Ideation", "href": "#", "special": false },
+        { "body": "Agile Workflows", "href": "#", "special": false },
+        { "body": "Diagramming", "href": "#", "special": false },
+        { "body": "Research & Design", "href": "#", "special": false },
+        { "body": "Strategy & Planning", "href": "#", "special": false },
+        { "body": "Mind Map", "href": "#", "special": false },
+        { "body": "Concept Map", "href": "#", "special": false },
+        { "body": "Online Sticky Notes", "href": "#", "special": false },
+        { "body": "Flowchart", "href": "#", "special": false },
+        { "body": "Wireframing", "href": "#", "special": false }
+      ]
+    },
+    {
+      "section": "Resources",
+      "links": [
+        { "body": "Miro Academy", "href": "#", "special": false },
+        { "body": "Help Center", "href": "#", "special": false },
+        { "body": "Blog", "href": "#", "special": false },
+        { "body": "Status", "href": "#", "special": false },
+        { "body": "Miro Community", "href": "#", "special": false },
+        { "body": "Miro Professional Network", "href": "#", "special": false },
+        { "body": "Miro Experts Directory", "href": "#", "special": false },
+        { "body": "Miro Events", "href": "#", "special": false }
+      ]
+    },
+    {
+      "section": "Company",
+      "links": [
+        { "body": "About us", "href": "#", "special": false },
+        { "body": "Careers 🚀", "href": "#", "special": false },
+        { "body": "Miro in the News", "href": "#", "special": false },
+        { "body": "Customer Stories", "href": "#", "special": false }
+      ]
+    },
+    {
+      "section": "Plans and Pricing",
+      "links": [
+        { "body": "Pricing", "href": "#", "special": false },
+        { "body": "Business", "href": "#", "special": false },
+        { "body": "Enterprise", "href": "#", "special": false },
+        { "body": "Consultants", "href": "#", "special": false },
+        { "body": "Education", "href": "#", "special": false },
+        { "body": "Startups", "href": "#", "special": false },
+        { "body": "NPOs", "href": "#", "special": false },
+        { "body": "Contact sales", "href": "#", "special": true }
+      ]
+    }
+  ]
+  

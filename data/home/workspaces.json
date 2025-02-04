@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Brainstorm",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-5.png",
+        "link": "#"
+    },
+    {
+        "title": "Diagramming",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-6.png",
+        "link": "#"
+    },
+    {
+        "title": "Meetings & Workshops",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-5.png",
+        "link": "#"
+    },
+    {
+        "title": "Scrum Events",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-5.png",
+        "link": "#"
+    },
+    {
+        "title": "Mapping",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-5.png",
+        "link": "#"
+    },
+    {
+        "title": "Research & Designs",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-5.png",
+        "link": "#"
+    },
+    {
+        "title": "Strategy Planning",
+        "desc": "Unleash creative ideas and build on them with the help of sticky notes, images, mind maps, videos, drawing capabilities — the list goes on.",
+        "img": "imgs/home/img-5.png",
+        "link": "#"
+    }
+]
