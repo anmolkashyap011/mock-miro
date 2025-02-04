@@ -7,9 +7,6 @@ export default {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		fontFamily: {
-			inter: "Helvetica, Inter, sans-serif",
-		},
 		extend: {
 			colors: {
 				white: "#F5F5F5",
@@ -20,6 +17,8 @@ export default {
 				primary: "#4262FF",
 				secondary: "#050038",
 				accent: "#FFD02F",
+				surface: "#F1F3FD",
+				"surface-variant": "#F2F2F2"
 			},
 			borderRadius: {
 				'c-xs': "0.25rem",  // 4px
@@ -29,7 +28,7 @@ export default {
 				'c-xl': "1.75rem",  // 28px
 			  },
 			fontFamily: {
-				roboto: ['Helvetica', 'Inter', 'sans-serif'],
+				default: ['Helvetica', 'Inter', 'sans-serif'],
 			},
 			fontSize: {
 				'head-l': ['3rem', { lineHeight: '3.5rem', fontWeight: 'bold' }],
@@ -38,11 +37,13 @@ export default {
 
 				'body-l': ['1.125rem', { lineHeight: '1.5rem', fontWeight: 'normal' }],
 
-				'label-l': ['1.125rem', { lineHeight: '1.5rem', fontWeight: 'normal' }],
-				'label-m': ['15rem', { lineHeight: '1.5rem', fontWeight: 'normal' }],
+				'label-l': ['1.125rem', { lineHeight: '1.5rem', fontWeight: '500' }],
+				'label-m': ['1rem', { lineHeight: '1.5rem', fontWeight: '500' }],
 				'label-s': ['.875rem', { lineHeight: '1.25rem', fontWeight: 'normal' }],
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('tailwindcss-animated')
+	],
 } satisfies Config;
