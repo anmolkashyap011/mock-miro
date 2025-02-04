@@ -4,10 +4,10 @@ A Landing Page.
 This is a demo site to showcase my skill to develop a website from the existing ui design.
 
 ## Live Demo
-[View the Live Site](#)
+[View the Live Site](https://mock-miro.web.app)
 
 ## Figma Design
-[View the Figma Design](#)
+[View the Figma Design](https://www.figma.com/design/jZbCFSBHWu3XDMybttPbc4/Miro?node-id=0-1&t=apS985t7oCHdIznL-1)
 
 ## Features
 - **Responsive Design:** Optimized for desktop, tablet, and mobile views.
