@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    @apply bg-neutral-light font-default;
+}
+
+h1 {
+    @apply text-head-l text-secondary;
+}
+
+h2 {
+    @apply text-head-m text-secondary;
+}
+
+h3 {
+    @apply text-head-s text-secondary;
+}
+
+p {
+    @apply text-body-l text-neutral-dark;
+}
+
+a {
+    @apply text-body-l text-primary underline;
+}
+
+input[type="text"] {
+    @apply text-body-l text-neutral-dark
+        px-6 py-3
+        rounded-full
+        bg-neutral-light
+        outline-none border border-neutral-dark;
+}
