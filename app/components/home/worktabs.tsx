@@ -9,7 +9,7 @@ interface WorkTabsProps {
     data: { title:string, desc:string, img:string, link:string }[]
 }
 
-export default function WorkTabs({ className = "", data } : WorkTabsProps) {
+export default function WorkTabs({ data } : WorkTabsProps) {
     const [activeTab, setActiveTab] = useState(0)
     const activeData = data[activeTab]
     return (

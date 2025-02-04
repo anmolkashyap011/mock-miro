@@ -30,7 +30,7 @@ export default function Home() {
 						w-full md:max-w-md
 					">
 						<h1>Take ideas from better to best</h1>
-						<p>Miro is your team's visual platform to connect, collaborate, and create — together.</p>
+						<p>Miro is your team&apos;s visual platform to connect, collaborate, and create — together.</p>
 						
 						<div className="
 							flex flex-col justify-stretch items-center gap-2
@@ -265,7 +265,7 @@ export default function Home() {
 					w-full max-w-7xl
 					px-8
 				">
-					<h1>Loved by the world's best teams</h1>
+					<h1>Loved by the world&apos;s best teams</h1>
 					<Link href="#" className="
 						flex justify-center items-center 
 						px-8 py-2

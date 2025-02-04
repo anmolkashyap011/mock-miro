@@ -6,7 +6,7 @@ interface ChipsProps {
     onSelected: (index: number) => void,
 }
 
-export default function Chips({ selectedIndex, chips, onSelected, ...props }: ChipsProps) {
+export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) {
     return (
         <div className="
             flex flex-row items-center justify-start gap-2 flex-wrap
