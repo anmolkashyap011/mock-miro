@@ -77,7 +77,7 @@ export default function Home() {
 				</section>
 
 				<section className="
-					flex flex-col justify-center items-center gap-8
+					flex flex-col justify-center items-start md:items-center gap-8
 					w-full max-w-6xl
 					mt-16
 					px-4
@@ -85,8 +85,8 @@ export default function Home() {
 					<div className="relative">
 						<span className="
 							absolute
-							-translate-x-1/2
-							-top-10 left-1/2 md:left-full
+							-translate-x-full md:-translate-x-1/2
+							-top-10 left-full
 							rotate-[10deg]
 
 							w-max
@@ -97,7 +97,7 @@ export default function Home() {
 						">
 							Your idea starts here
 						</span>
-						<h1 className="text-center">Collaborate without <br />constraints</h1>
+						<h1 className="text-left md:text-center">Collaborate without <br />constraints</h1>
 					</div>
 
 					<div className="
@@ -110,8 +110,7 @@ export default function Home() {
 							w-full
 						">
 							<h2>Free Forever</h2>
-							<p>Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing up with your work email lets you bring in your team faster. See our 
-							<Link href="#">pricing plans</Link> for more features.</p>
+							<p>Our free plan gives you unlimited team members, 3 boards, and 300+ expert-made templates. Signing up with your work email lets you bring in your team faster. See our <Link href="#">pricing plans</Link> for more features.</p>
 						</div>
 						<div className="
 							flex flex-col gap-6
@@ -119,8 +118,7 @@ export default function Home() {
 							w-full
 						">
 							<h2>Easy Integration</h2>
-							<p>Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is seamless. View the full list in our 
-							<Link href="#">Marketplace.</Link></p>
+							<p>Miro has 100+ powerful integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is seamless. View the full list in our <Link href="#">Marketplace.</Link></p>
 						</div>
 						<div className="
 							flex flex-col gap-6
@@ -129,8 +127,7 @@ export default function Home() {
 						">
 							<h2>Security First</h2>
 							<p>We treat your data like you would — with the utmost care. We follow industry-leading security standards and give you tools to protect intellectual property. Learn more 
-							at our 
-							<Link href="#">Trust Center.</Link></p>
+							at our <Link href="#">Trust Center.</Link></p>
 						</div>
 					</div>
 
@@ -232,7 +229,7 @@ export default function Home() {
 				</section>
 
 				<section className="
-					flex flex-col justify-center items-center gap-8
+					flex flex-col justify-center items-start md:items-center gap-8
 					w-full
 					px-8 py-32
 					bg-accent
@@ -261,7 +258,7 @@ export default function Home() {
 				</section>
 
 				<section className="
-					flex flex-col justify-center items-center gap-8
+					flex flex-col justify-center items-start md:items-center gap-8
 					w-full max-w-7xl
 					px-8
 				">
