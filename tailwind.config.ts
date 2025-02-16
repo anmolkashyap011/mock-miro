@@ -8,6 +8,15 @@ export default {
 	],
 	theme: {
 		extend: {
+			keyframes: {
+				scrollLeft: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-100%)' },
+				}
+			},
+			animation: {
+				scrollLeft: "scrollLeft 20s linear infinite",
+			},
 			colors: {
 				white: "#F5F5F5",
 				black: "#050505",
