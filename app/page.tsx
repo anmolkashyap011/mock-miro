@@ -11,6 +11,8 @@ import teamStories from "@/data/home/team-stories.json";
 import footerLinks from "@/data/footer-links.json";
 
 export default function Home() {
+	const brandRepeater = Array.from({ length: 2 });
+
 	return (
 		<div>
 			<NavBar />
@@ -60,19 +62,40 @@ export default function Home() {
 				<section className="
 					flex flex-col justify-center items-center gap-16
 					w-full max-w-6xl mx-auto
-					p-8
+					px-4
 				">
 					<p>Trusted by 45M+ users</p>
 					<div className="
-						flex flex-row justify-center lg:justify-between items-center flex-wrap basis-64
+						relative
+						flex flex-row items-center justify-start lg:justify-center
 						w-full
 						overflow-x-clip
-					">
-						<img src="partners/walmart.svg" alt="Walmart" />
-						<img src="partners/cisco.svg" alt="Cisco" />
-						<img src="partners/volvo.svg" alt="Volvo" />
-						<img src="partners/deloitte.svg" alt="Deloitte" />
-						<img src="partners/okta.svg" alt="Okta" />
+					" > 
+						{brandRepeater.map((_, i:number) => (
+							<span className={`
+								block lg:hidden
+								absolute
+								h-full w-12
+								z-10
+								${i == 0 ? 'left-0' : 'right-0'}
+								bg-[linear-gradient(to_right,white,transparent)]
+								${i == 0 ? '' : 'rotate-180'}
+							`}></span>		
+						))}
+						{brandRepeater.map((_, i: number) => (
+							<div key={i} className={`
+								${i == 0 ? 'flex' : 'flex lg:hidden'} flex-row justify-between items-center
+								min-w-max md:min-w-full
+								animate-scrollLeft lg:animate-none
+								px-12
+							`}>
+								<img src="partners/walmart.svg" alt="Walmart" />
+								<img src="partners/cisco.svg" alt="Cisco" />
+								<img src="partners/volvo.svg" alt="Volvo" />
+								<img src="partners/deloitte.svg" alt="Deloitte" />
+								<img src="partners/okta.svg" alt="Okta" />
+							</div>
+						))}
 					</div>
 				</section>
 
