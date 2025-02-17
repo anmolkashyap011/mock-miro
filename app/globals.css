@@ -34,3 +34,14 @@ input[type="text"] {
         bg-neutral-light
         outline-none border border-neutral-dark;
 }
+
+@layer utilities {
+    .hide-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+  
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
