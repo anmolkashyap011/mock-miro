@@ -72,7 +72,7 @@ export default function Home() {
 						overflow-x-clip
 					" > 
 						{brandRepeater.map((_, i:number) => (
-							<span className={`
+							<span key={i} className={`
 								block lg:hidden
 								absolute
 								h-full w-12
