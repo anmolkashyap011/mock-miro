@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Chips from "../chips"
 import Link from "next/link"
+import ArrowLink from "../arrow-link"
 
 interface WorkTabsProps {
     className?: string,
@@ -30,10 +31,9 @@ export default function WorkTabs({ data } : WorkTabsProps) {
                 ">
                     <h3>{activeData.title}</h3>
                     <p>{activeData.desc}</p>
-                    <Link href={activeData.link} className="flex flex-row gap-4 items-center">
+                    <ArrowLink href="#">
                         Learn More
-                        <img src="icons/arrow.svg" alt="" />
-                    </Link>
+                    </ArrowLink>
                 </div>
                 <div className="
                     flex flex-1 flex-col justify-center items-center gap-2

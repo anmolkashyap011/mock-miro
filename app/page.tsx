@@ -9,6 +9,8 @@ import noTrustIssues from "@/data/home/no-trust-issues.json";
 import teamStories from "@/data/home/team-stories.json";
 
 import footerLinks from "@/data/footer-links.json";
+import LinkButton from "./components/link-button";
+import ArrowLink from "./components/arrow-link";
 
 export default function Home() {
 	const brandRepeater = Array.from({ length: 2 });
@@ -39,12 +41,9 @@ export default function Home() {
 							w-full
 						">
 							<input type="text" name="work-email" id="work-email-header" placeholder="Enter your work email" className="w-full"/>
-							<Button variant="filled" className="w-full"> 
-								<div className="flex flex-row items-center gap-2">
-									Sign Up Free
-									<img src="icons/arrow.svg" alt="" className="w-5 h-5" />
-								</div>
-							</Button>
+							<LinkButton href="#" className="w-full">
+								Sign Up Free
+							</LinkButton>
 						</div>
 
 						<p className="text-neutral-mid block md:max-lg:hidden">Collaborate with your team within minutes</p>
@@ -154,12 +153,9 @@ export default function Home() {
 						</div>
 					</div>
 
-					<Button variant="filled" className="block"> 
-						<div className="flex flex-row items-center gap-2">
-							Sign Up Free
-							<img src="icons/arrow.svg" alt="" className="w-5 h-5" />
-						</div>
-					</Button>
+					<LinkButton href="#" className="">
+						Sign Up Free
+					</LinkButton>
 				</section>
 
 				<section className="
@@ -173,10 +169,9 @@ export default function Home() {
 					">
 						<h1>Work together, <br />wherever you work.</h1>
 						<p>In the office, remote, or a mix of the two, with Miro, your team can connect, collaborate, and co-create in one space no matter where you are.</p>
-						<Link href="#" className="flex flex-row gap-4 items-center">
+						<ArrowLink href="#">
 							Learn More
-							<img src="icons/arrow.svg" alt="" />
-						</Link>
+						</ArrowLink>
 					</div>
 					<div className="
 						flex flex-col justify-center items-center gap-2
@@ -201,10 +196,9 @@ export default function Home() {
 					">
 						<h1>Connect Your Tools, <br />Close your tabs.</h1>
 						<p>In the office, remote, or a mix of the two, with Miro, your team can connect, collaborate, and co-create in one space no matter where you are.</p>
-						<Link href="#" className="flex flex-row gap-4 items-center">
+						<ArrowLink href="#">
 							Learn More
-							<img src="icons/arrow.svg" alt="" />
-						</Link>
+						</ArrowLink>
 					</div>
 				</section>
 
@@ -233,12 +227,9 @@ export default function Home() {
 					">
 						<h1>The Ways, <br />The Works</h1>
 						<p className="text-center">How has our relationship with work changed?</p>
-						<Button variant="filled" className="block"> 
-						<div className="flex flex-row items-center gap-2">
+						<LinkButton href="#" className="">
 							Sign Up Free
-							<img src="icons/arrow.svg" alt="" className="w-5 h-5" />
-						</div>
-					</Button>
+						</LinkButton>
 					</div>
 				</section>
 
@@ -259,7 +250,9 @@ export default function Home() {
 				">
 					<h1>Why companies large <br />
 					and small trust Miro</h1>
-					<Link href="#" className="text-secondary">Contact Sales to request a demo</Link>
+					<ArrowLink href="#" colors='secondary'>
+						Contact Sales to request a demo
+					</ArrowLink>
 
 					<div className="
 						grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
@@ -286,14 +279,17 @@ export default function Home() {
 					px-8
 				">
 					<h1>Loved by the world&apos;s best teams</h1>
-					<Link href="#" className="
+					{/* <Link href="#" className="
 						flex justify-center items-center 
 						px-8 py-2
 						bg-neutral-light border border-primary rounded-full
 						hover:bg-primary hover:text-neutral-light
 						transition
 						no-underline
-					">See all customer stories</Link>
+					">See all customer stories</Link> */}
+					<LinkButton variant="outlined" href="#" className="">
+						See all customer stories
+					</LinkButton>
 
 					<div className="
 						grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8
@@ -341,12 +337,9 @@ export default function Home() {
 						<p className="text-neutral-mid text-center">Start for free — upgrade anytime.</p>
 						<Link href="#" className="text-neutral-mid text-center">Joining as an organization? Contact Sales</Link>
 						<span className="h-4"></span>
-						<Button variant="filled"> 
-							<div className="flex flex-row justify-center items-center gap-2">
-								Sign Up Free
-								<img src="icons/arrow.svg" alt="" className="w-5 h-5" />
-							</div>
-						</Button>
+						<LinkButton href="#" className="">
+							Sign Up Free
+						</LinkButton>
 					</div>
 				</section>
 			</main>
@@ -373,7 +366,10 @@ export default function Home() {
 							">
 								{section.links.map((link) => (
 									<li key={link.body} className='w-full'>
-										<Link href={""/* link.href */} className={
+										{link.special && <ArrowLink href="#" colors="dull">
+											{link.body}
+										</ArrowLink>}
+										{!link.special && <Link href={""/* link.href */} className={
 											link.special ? "link-special" : "" + `
 											block
 											text-neutral-mid no-underline
@@ -382,7 +378,7 @@ export default function Home() {
 
 											py-2
 											w-full
-										`}>{link.body}</Link>
+										`}>{link.body}</Link>}
 									</li>
 								))}
 							</ul>

@@ -24,7 +24,10 @@ p {
 }
 
 a {
-    @apply text-body-l text-primary underline;
+    @apply text-body-l text-primary no-underline transition;
+}
+a:hover {
+    @apply text-secondary;
 }
 
 input[type="text"] {
