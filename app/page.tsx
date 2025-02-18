@@ -24,6 +24,8 @@ export default function Home() {
 				flex flex-col-reverse md:flex-row justify-center items-center gap-8
 				max-w-7xl w-full
 				px-8
+
+				animate-fade-up
 			">
 				<div className="
 					flex flex-col justify-center items-center md:items-start gap-6
