@@ -54,7 +54,7 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
             overflow-x-clip
         ">
             {repeater.map((_, i:number) => (
-                <button title='scroll-btn' onClick={i == 0 ? scrollRight : scrollLeft} type='button' key={i} className={`
+                <button title='scroll-btn' onClick={i == 0 ? scrollRight : scrollLeft} type='button' key={'1' + i} className={`
                     ${ i == 0 
                         ? showLeft ? 'opacity-100' : 'opacity-0 pointer-events-none' 
                         : showRight ? 'opacity-100' : 'opacity-0 ppinter-events-none' 
@@ -80,7 +80,7 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
             ))}
 
             {repeater.map((_, i:number) => (
-                <span className={`
+                <span key={i} className={`
                     block lg:hidden
 
                     ${ i == 0 
@@ -112,7 +112,7 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
 
                 snap-x snap-mandatory
 
-                transition-transform duration-300
+                transition duration-500
             ">
                 {chips.map((chip, index) => (
                     <button key={index} onClick={() => { onSelected(index) }} type="button" title={chip} className={`
@@ -121,7 +121,10 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
                         min-w-max
                         text-label-s text-secondary
                         border border-surface rounded-full
-                        ${ index == selectedIndex ? "bg-surface" : "bg-transcontainer" }
+                        transition duration-500
+                        ${ index == selectedIndex 
+                            ? "bg-surface" 
+                            : "bg-transparent hover:bg-surface-variant hover:duration-150" }
 
                         snap-center
                     `}>
