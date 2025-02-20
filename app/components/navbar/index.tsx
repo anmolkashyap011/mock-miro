@@ -85,7 +85,8 @@ function SubLinkNavItem({ item, onSubItemClick, className }: { item: NavLinkItem
 function MenuButton({ opened, onClick, className }: { opened?: boolean, onClick?: () => void, className?: string }) {
     return (
         <button type="button" title="menu-btn" className={"menu-btn " + className} onClick={onClick} >
-            <img src="icons/menu.svg" alt="menu" className="w-8 h-8"/>
+            {!opened && <img src="icons/menu.svg" alt="menu" className="w-8 h-8"/>}
+            {opened && <ArrowCap className="scale-[2] rotate-90 stroke-secondary"/>}
         </button>
     )
 }
