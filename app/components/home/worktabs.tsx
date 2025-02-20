@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Chips from "../chips"
-import Link from "next/link"
 import ArrowLink from "../arrow-link"
 
 interface WorkTabsProps {
