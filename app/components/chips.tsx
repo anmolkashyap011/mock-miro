@@ -28,11 +28,15 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
     }
 
     function scrollLeft() {
-
+        if (container.current) {
+            container.current.scrollLeft += 200;
+        }
     }
-
+    
     function scrollRight() {
-
+        if (container.current) {
+            container.current.scrollLeft -= 200;
+        }
     }
 
     useEffect(() => {
@@ -54,24 +58,29 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
             overflow-x-clip
         ">
             {repeater.map((_, i:number) => (
-                <button title='scroll-btn' onClick={i == 0 ? scrollRight : scrollLeft} type='button' key={'1' + i} className={`
-                    ${ i == 0 
-                        ? showLeft ? 'opacity-100' : 'opacity-0 pointer-events-none' 
-                        : showRight ? 'opacity-100' : 'opacity-0 ppinter-events-none' 
-                    }
+                <button 
+                    title={`scroll-btn-${i}`}
+                    onClick={i == 0 ? scrollRight : scrollLeft} 
+                    type='button' 
+                    key={`btn-${i}`} 
+                    className={`
+                        ${ i == 0 
+                            ? (showLeft ? 'opacity-100' : 'opacity-0 pointer-events-none') 
+                            : (showRight ? 'opacity-100' : 'opacity-0 ppinter-events-none') 
+                        }
 
-                    hidden md:block
-                    absolute
-                    h-full
-                    aspect-square
+                        hidden md:block
+                        absolute
+                        h-full
+                        aspect-square
 
-                    bg-neutral-light
-                    border border-neutral-mid rounded-full
-                    ${i == 0 ? '[box-shadow:10px_0px_10px_0px_rgba(255,255,255,1)]' : '[box-shadow:-10px_0px_10px_0px_rgba(255,255,255,1)]'}
-                    
-                    ${i == 0 ? "left-0" : "right-0"}
+                        bg-neutral-light
+                        border border-neutral-mid rounded-full
+                        ${i == 0 ? '[box-shadow:10px_0px_10px_0px_rgba(255,255,255,1)]' : '[box-shadow:-10px_0px_10px_0px_rgba(255,255,255,1)]'}
+                        
+                        ${i == 0 ? "left-0" : "right-0"}
 
-                    z-10
+                        z-10
                 `}>
                     <img src="icons/arrow-cap.svg" alt="" className={`
                         w-full h-full ${i==0 ? 'rotate-90' : '-rotate-90'}
@@ -110,7 +119,7 @@ export default function Chips({ selectedIndex, chips, onSelected }: ChipsProps) 
                 overflow-x-auto
                 hide-scrollbar
 
-                snap-x snap-mandatory
+                snap-x snap-mandatory scroll-smooth
 
                 transition duration-500
             ">
